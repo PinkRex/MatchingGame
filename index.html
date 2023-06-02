@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: #53b232;
+      }
+
+      #title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      h2,
+      p {
+        padding: 0;
+        color: white;
+        left: 50%;
+      }
+
+      p {
+        padding-top: 3px;
+      }
+
+      div:not(#title) {
+        width: 700px;
+        height: 500px;
+        position: absolute;
+      }
+
+      #rightside {
+        border-left: 1px solid black;
+        margin-left: 50%;
+      }
+
+      img {
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="title">
+      <h2>Matching Game</h2>
+      <p>Click on the extra smiling face on the left</p>
+    </div>
+    <div id="leftside"></div>
+    <div id="rightside"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
